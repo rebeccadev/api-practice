@@ -130,3 +130,5 @@ rightButton.addEventListener('click', handleRightButtonClick);
 for (const mountListItem of mountListItems) {
     mountListItem.addEventListener('click', handleListItemClick);
 }
+
+
