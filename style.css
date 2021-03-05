@@ -4,17 +4,23 @@
     padding: 0;
 }
 
+
+
 body {
     display: flex;
     font-family: sans-serif;
     justify-content: center;
+    background-image: url("logopattern.png");
+    background-repeat: repeat;
 }
+
+
 
 .pokedex {
     align-items: flex-end;
     display: flex;
-    height:750px;
-    margin: 50px;
+    height: 780px;
+    margin: 10px;
     width: 800px;
 }
 
@@ -37,7 +43,7 @@ body {
 .left-container__top-section {
     border-bottom: 3px solid black;
     display: flex;
-    height: 50px;
+    height: 40px;
     padding: 8px;
 }
 
@@ -46,8 +52,8 @@ body {
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 
 .top-section__small-buttons {
@@ -72,30 +78,31 @@ body {
 
 .left-container__main-section {
     height: 100%;
-    padding: 25px;
+    padding: 10px;
     width: 500px;
 }
 
 .main-section__white {
-    background: #DEDEDE;
+    border-radius: 5px;
+    background: #000000;
     border: 3px solid black;
     box-shadow: inset 0 0 3px 3px rgba(0,0,0,.3);
-    height: 550px;
+    height: 700px;
 }
 
 .main-section__black {
 
     background: black;
     height: calc(100% - 50px);
-    margin: 25px;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px;
     width: calc(100% - 50px);
 }
 
 .main-screen {
     border-radius: 15px;
     height: 100%;
-    padding: 15px;
+    padding: 5px;
 }
 
 .screen__header {
@@ -106,13 +113,16 @@ body {
 
 .mount-name {
     color: white;
+    font-family: 'VT323', monospace;
     font-size: 25px;
-    font-weight: bold;
+    padding-bottom: 50px;
+    
 }
 
 .mount-id {
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
+    font-family: 'VT323', monospace;
 }
 
 .screen__image {
@@ -136,11 +146,13 @@ body {
     background: rgba(0,0,0,.3);
     border-radius: 5px;
     color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 40px 40px;
 }
 
 .stats__types {
@@ -253,7 +265,7 @@ body {
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    width: 50px;
+    width: 10px;
 }
 
 .left-container__hinge {
@@ -271,7 +283,7 @@ body {
 }
 
 .top-section__red {
-    background: ##800020;
+    background: #800020;
 }
 
 .top-section__yellow {
@@ -285,25 +297,25 @@ body {
 .right-container {
     background: #5b7482;
     height: calc(100% - 50px);
-    padding: 25px;
+    padding: 10px;
     width: calc(50% - 50px);
 }
 
 .right-container__black {
     background: black;
     box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
-    height: 300px;
+    height: 350px;
     padding: 10px;
 }
 
 .right-container__screen {
-    background: #43B0F2;
+    background: 	#484848;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    padding: 15px 15px 0;
+    padding: 5px 5px 0;
 }
 
 .list-item {
@@ -314,17 +326,17 @@ body {
     font-size: 12px;
     height: 25px;
     overflow-x: hidden;
-    padding-left: 5px;
+    padding-left: 2px;
     width: 50%;
 }
 
 .list-item:hover {
-    background: #85cbf2;
+    background: #B0B0B0;
     color: black;
 }
 
 .list-item:active {
-    background: #1280f2;
+    background: #686868;
     color: white;
 }
 
@@ -338,16 +350,18 @@ body {
 .right-button {
     align-items: center;
     background: #DEDEDE;
-    border-radius: 3px;
+    border-radius: 50%;
     border: 2px solid black;
     box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
     cursor: pointer;
     display: flex;
     font-weight: bold;
-    height: 30px;
+    height: 50px;
     justify-content: center;
     text-transform: uppercase;
-    width: 100px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .left-button:hover,
@@ -366,3 +380,51 @@ body {
 }
 
 
+@media screen and (max-width: 720px) {
+    .pokedex {
+        align-items: flex-end;
+        display: flex;
+        height: 775px;
+        margin: 5px;
+        width: 400px;
+    }
+
+    .screen__stats {
+    background: rgba(0,0,0,.3);
+    border-radius: 5px;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 10px 5px;
+    }
+
+    .list-item {
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 10px;
+    height: 30px;
+    overflow-x: hidden;
+    padding-left: 5px;
+    width: 50%;
+    }
+
+    .mount-front-image,
+    .mount-back-image {
+    height: 117px;
+    width: 117px;
+    padding-top: 25px;
+    }
+
+    .right-container__black {
+    background: black;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3);
+    height: 425px;
+    padding: 10px;
+    }
+}
